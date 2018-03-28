@@ -1,8 +1,9 @@
 package com.grydtech.ibuy.orderservice.events;
 
 
-public class OrderCreatedEvent {
+import com.grydtech.ibuy.orderservice.common.Event;
 
+public class OrderCreatedEvent extends Event {
 
     // generating getters for entity attributes
     // end generating getters for entity attributes
