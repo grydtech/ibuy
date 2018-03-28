@@ -1,4 +1,4 @@
-package com.grydtech.ibuy;
+package com.grydtech.ibuy.orderservice;
 
 /**
  * Created by Gavindya on 3/28/2018.

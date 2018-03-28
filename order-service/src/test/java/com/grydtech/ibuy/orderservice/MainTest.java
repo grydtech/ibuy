@@ -1,4 +1,4 @@
-package com.grydtech.ibuy;
+package com.grydtech.ibuy.orderservice;
 
 import org.junit.Test;
 
