@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by Gavindya on 3/28/2018.
  */
-public class MainTest {
+public class JaxRsAppTest {
 
     @Test
     public void testMain() {
