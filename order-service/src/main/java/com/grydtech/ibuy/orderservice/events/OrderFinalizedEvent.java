@@ -1,10 +1,17 @@
 package com.grydtech.ibuy.orderservice.events;
 
+import com.grydtech.ibuy.orderservice.common.Event;
+import com.grydtech.ibuy.orderservice.common.Topic;
 
-public class OrderFinalizedEvent {
+@Topic("order-finalized")
+public class OrderFinalizedEvent extends Event {
+    private Double payment;
 
+    public OrderFinalizedEvent(Double payment) {
+        this.payment = payment;
+    }
 
-    // generating getters for entity attributes
-    // end generating getters for entity attributes
-
+    public Double getPayment() {
+        return payment;
+    }
 }
