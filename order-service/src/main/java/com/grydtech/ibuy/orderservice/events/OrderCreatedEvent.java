@@ -1,10 +1,17 @@
 package com.grydtech.ibuy.orderservice.events;
 
+import com.grydtech.ibuy.orderservice.common.Event;
+import com.grydtech.ibuy.orderservice.common.Topic;
 
-public class OrderCreatedEvent {
+@Topic("order-created")
+public class OrderCreatedEvent extends Event {
+    private String customerId;
 
+    public OrderCreatedEvent(String customerId) {
+        this.customerId = customerId;
+    }
 
-    // generating getters for entity attributes
-    // end generating getters for entity attributes
-
+    public String getCustomerId() {
+        return customerId;
+    }
 }
