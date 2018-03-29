@@ -1,10 +1,18 @@
 package com.grydtech.ibuy.orderservice.events;
 
+import com.grydtech.ibuy.orderservice.common.Event;
+import com.grydtech.ibuy.orderservice.common.Topic;
+import com.grydtech.ibuy.orderservice.entities.ItemEntity;
 
-public class ItemAddedEvent {
+@Topic("item-added")
+public class ItemAddedEvent extends Event {
+    private ItemEntity item;
 
+    public ItemAddedEvent(ItemEntity item) {
+        this.item = item;
+    }
 
-    // generating getters for entity attributes
-    // end generating getters for entity attributes
-
+    public ItemEntity getItem() {
+        return item;
+    }
 }

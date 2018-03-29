@@ -16,7 +16,7 @@ public class CreateOrderHandler {
 
     @POST
     public GenericResponse handle(OrderCreateRequest orderCreateRequest) {
-        new OrderCreatedEvent().emit();
+        new OrderCreatedEvent(orderCreateRequest.getCustomerId()).emit();
         return new GenericResponse(200, "success");
     }
 

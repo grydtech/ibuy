@@ -1,5 +1,7 @@
 package com.grydtech.ibuy.orderservice.common;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 public final class KafkaHelper {
     private static KafkaSender kafkaSender;
 
@@ -9,7 +11,7 @@ public final class KafkaHelper {
 
     private KafkaHelper(){}
 
-    public static void send(String topic, String message) {
-        kafkaSender.send(topic, message);
+    public static void send(String topic, Object content) throws JsonProcessingException {
+        kafkaSender.send(topic, content);
     }
 }
