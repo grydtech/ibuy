@@ -1,8 +1,8 @@
 package com.grydtech.ibuy.orderservice.handlers;
 
-import com.grydtech.ibuy.orderservice.events.*;
-import com.grydtech.ibuy.orderservice.requests.*;
-import com.grydtech.ibuy.orderservice.responses.*;
+import com.grydtech.ibuy.orderservice.events.OrderCreatedEvent;
+import com.grydtech.ibuy.orderservice.requests.OrderCreateRequest;
+import com.grydtech.ibuy.orderservice.responses.GenericResponse;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;

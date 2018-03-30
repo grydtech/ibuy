@@ -1,7 +1,7 @@
 package com.grydtech.ibuy.orderservice.handlers;
 
-import com.grydtech.ibuy.orderservice.requests.*;
-import com.grydtech.ibuy.orderservice.responses.*;
+import com.grydtech.ibuy.orderservice.requests.AddItemRequest;
+import com.grydtech.ibuy.orderservice.responses.GenericResponse;
 
 public class AddItemHandler {
 
