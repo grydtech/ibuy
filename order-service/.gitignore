@@ -4,3 +4,6 @@
 
 # build
 target
+
+# tomcat embed
+tomcat*
