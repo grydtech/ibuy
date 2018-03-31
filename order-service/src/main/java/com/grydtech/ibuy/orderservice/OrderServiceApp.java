@@ -14,7 +14,8 @@ public class OrderServiceApp extends Application {
     public Set<Class<?>> getClasses() {
         return new HashSet<>(
                 Arrays.asList(
-                        CreateOrderHandler.class
+                        CreateOrderHandler.class,
+                        JacksonFeature.class
                 ));
     }
 }
