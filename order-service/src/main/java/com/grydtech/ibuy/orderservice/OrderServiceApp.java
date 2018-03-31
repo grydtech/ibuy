@@ -1,5 +1,6 @@
 package com.grydtech.ibuy.orderservice;
 
+import com.grydtech.ibuy.orderservice.common.JacksonFeature;
 import com.grydtech.ibuy.orderservice.handlers.CreateOrderHandler;
 
 import javax.ws.rs.ApplicationPath;
