@@ -2,8 +2,6 @@ package com.grydtech.ibuy.orderservice.common;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import java.lang.annotation.Annotation;
-
 public abstract class Event {
     public void emit() {
         try {
