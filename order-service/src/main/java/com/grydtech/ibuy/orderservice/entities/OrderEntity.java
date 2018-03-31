@@ -31,9 +31,11 @@ public class OrderEntity {
     public void apply(OrderCreatedEvent orderCreatedEvent) {
         // add OrderCreatedEvent based logic here
     }
+
     public void apply(ItemAddedEvent itemAddedEvent) {
         // add ItemAddedEvent based logic here
     }
+
     public void apply(OrderFinalizedEvent orderFinalizedEvent) {
         // add OrderFinalizedEvent based logic here
     }

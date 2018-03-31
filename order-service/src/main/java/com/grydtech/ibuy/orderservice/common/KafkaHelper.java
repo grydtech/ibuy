@@ -9,7 +9,8 @@ public final class KafkaHelper {
         kafkaSender = new KafkaSender();
     }
 
-    private KafkaHelper(){}
+    private KafkaHelper() {
+    }
 
     public static void send(String topic, Object content) throws JsonProcessingException {
         kafkaSender.send(topic, content);
