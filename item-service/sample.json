@@ -1,0 +1,121 @@
+{
+  "version": "0.0.1",
+  "service_name": "item_service",
+  "entity_classes": [
+    {
+      "name": "item_entity",
+      "attributes": [
+        {
+          "name": "item_code",
+          "type": "string",
+          "multiplicity": "single"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "multiplicity": "single"
+        },
+        {
+          "name": "quantity",
+          "type": "integer",
+          "multiplicity": "single"
+        },
+        {
+          "name": "unit_price",
+          "type": "double",
+          "multiplicity": "single"
+        },
+        {
+          "name": "price",
+          "type": "double",
+          "multiplicity": "single"
+        }
+      ],
+      "events": [
+        "item_added_event"
+      ]
+    }
+  ],
+  "event_classes": [
+    {
+      "name": "item_added_event",
+      "attributes": []
+    }
+  ],
+  "handlers": [
+    {
+      "name": "get_item_handler",
+      "type": "query",
+      "consume": {
+        "name": "add_item_req",
+        "type": null,
+        "attributes": [
+          {
+            "name": "item_code",
+            "type": "string",
+            "multiplicity": "single"
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "multiplicity": "single"
+          }
+        ]
+      },
+      "produce": {
+        "name": "add_item_res",
+        "attributes": [
+          {
+            "name": "item_code",
+            "type": "string",
+            "multiplicity": "single"
+          },
+          {
+            "name": "status",
+            "type": "integer",
+            "multiplicity": "single"
+          }
+        ]
+      },
+      "events": []
+    },
+    {
+      "name": "add_item_handler",
+      "type": "command",
+      "consume": {
+        "name": "add_item_req",
+        "type": null,
+        "attributes": [
+          {
+            "name": "item_code",
+            "type": "string",
+            "multiplicity": "single"
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "multiplicity": "single"
+          }
+        ]
+      },
+      "produce": {
+        "name": "add_item_res",
+        "attributes": [
+          {
+            "name": "item_code",
+            "type": "string",
+            "multiplicity": "single"
+          },
+          {
+            "name": "status",
+            "type": "integer",
+            "multiplicity": "single"
+          }
+        ]
+      },
+      "events": [
+        "item_added_event"
+      ]
+    }
+  ]
+}
