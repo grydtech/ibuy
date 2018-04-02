@@ -2,3 +2,13 @@
 .idea
 *.iml
 target
+src/main/java/com/grydtech/ibuy/itemservice/example
+src/main/java/com/grydtech/ibuy/itemservice/common/KafkaHelper.java
+src/main/java/com/grydtech/ibuy/itemservice/common/KafkaSender.java
+src/main/java/com/grydtech/ibuy/itemservice/EndPoint.java
+src/main/java/com/grydtech/ibuy/itemservice/EndPointHandler.java
+src/main/java/com/grydtech/ibuy/itemservice/EndPointInitializer.java
+src/main/java/com/grydtech/ibuy/itemservice/Server.java
+src/main/java/com/grydtech/ibuy/itemservice/ServerHandler.java
+src/main/java/com/grydtech/ibuy/itemservice/ServerInitializer.java
+src/main/java/com/grydtech/ibuy/itemservice/NettyHttpServer.java
