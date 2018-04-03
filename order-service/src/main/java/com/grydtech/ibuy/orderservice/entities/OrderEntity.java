@@ -1,6 +1,6 @@
 package com.grydtech.ibuy.orderservice.entities;
 
-import com.grydtech.ibuy.orderservice.events.ItemAddedEvent;
+import com.grydtech.ibuy.orderservice.events.OrderItemAddedEvent;
 import com.grydtech.ibuy.orderservice.events.OrderCreatedEvent;
 import com.grydtech.ibuy.orderservice.events.OrderFinalizedEvent;
 import com.grydtech.msstack.core.components.Entity;
@@ -33,7 +33,7 @@ public class OrderEntity extends Entity {
         // add OrderCreatedEvent based logic here
     }
 
-    public void apply(ItemAddedEvent itemAddedEvent) {
+    public void apply(OrderItemAddedEvent orderItemAddedEvent) {
         // add ItemAddedEvent based logic here
     }
 
