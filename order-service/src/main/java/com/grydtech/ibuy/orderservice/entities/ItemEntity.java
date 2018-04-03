@@ -1,6 +1,8 @@
 package com.grydtech.ibuy.orderservice.entities;
 
-public class ItemEntity {
+import com.grydtech.msstack.core.components.Entity;
+
+public class ItemEntity extends Entity {
     private String itemCode;
     private String name;
     private Integer quantity;

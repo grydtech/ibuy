@@ -3,10 +3,11 @@ package com.grydtech.ibuy.orderservice.entities;
 import com.grydtech.ibuy.orderservice.events.ItemAddedEvent;
 import com.grydtech.ibuy.orderservice.events.OrderCreatedEvent;
 import com.grydtech.ibuy.orderservice.events.OrderFinalizedEvent;
+import com.grydtech.msstack.core.components.Entity;
 
 import java.util.List;
 
-public class OrderEntity {
+public class OrderEntity extends Entity {
     private String orderId;
     private String customerId;
     private Double payment;

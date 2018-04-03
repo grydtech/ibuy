@@ -102,6 +102,13 @@
             <version>${kafka.version}</version>
         </dependency>
 
+        <!-- get classes using reflections -->
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.11</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -138,7 +145,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.grydtech.ibuy.orderservice.Main</mainClass>
+                                    <mainClass>com.grydtech.ibuy.orderservice.OrderServiceApplication</mainClass>
                                 </transformer>
                             </transformers>
                             <createDependencyReducedPom>false</createDependencyReducedPom>

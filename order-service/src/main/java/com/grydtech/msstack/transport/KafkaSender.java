@@ -1,4 +1,4 @@
-package com.grydtech.ibuy.orderservice.common;
+package com.grydtech.msstack.transport;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

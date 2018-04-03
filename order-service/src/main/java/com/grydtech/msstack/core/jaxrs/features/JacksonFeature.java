@@ -1,4 +1,4 @@
-package com.grydtech.ibuy.orderservice.common;
+package com.grydtech.msstack.core.jaxrs.features;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
