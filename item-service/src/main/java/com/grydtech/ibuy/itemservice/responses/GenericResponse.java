@@ -1,7 +1,9 @@
 package com.grydtech.ibuy.itemservice.responses;
 
 
-public class GenericResponse implements Response{
+import com.grydtech.msstack.core.Response;
+
+public class GenericResponse extends Response {
     private Integer status;
     private String message;
 
@@ -10,30 +12,11 @@ public class GenericResponse implements Response{
         this.message = message;
     }
 
-    public GenericResponse() {
-    }
-
     public Integer getStatus() {
         return status;
     }
 
     public String getMessage() {
         return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "GenericResponse{" +
-                "status=" + status +
-                ", message='" + message + '\'' +
-                '}';
     }
 }
