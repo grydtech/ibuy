@@ -1,6 +1,6 @@
 package com.grydtech.ibuy.orderservice.requests;
 
-import com.grydtech.msstack.core.components.Request;
+import com.grydtech.msstack.core.Request;
 
 public class OrderFinalizeRequest extends Request {
     private String orderId;

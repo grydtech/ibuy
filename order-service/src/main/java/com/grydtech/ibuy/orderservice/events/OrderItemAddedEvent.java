@@ -1,7 +1,7 @@
 package com.grydtech.ibuy.orderservice.events;
 
-import com.grydtech.msstack.core.components.Event;
 import com.grydtech.ibuy.orderservice.entities.ItemEntity;
+import com.grydtech.msstack.core.Event;
 
 public class OrderItemAddedEvent extends Event {
     private String orderId;
