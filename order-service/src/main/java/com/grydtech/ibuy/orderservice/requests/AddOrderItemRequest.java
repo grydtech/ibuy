@@ -1,7 +1,7 @@
 package com.grydtech.ibuy.orderservice.requests;
 
 import com.grydtech.ibuy.orderservice.entities.ItemEntity;
-import com.grydtech.msstack.core.components.Request;
+import com.grydtech.msstack.core.Request;
 
 public class AddOrderItemRequest extends Request {
     private String orderId;
