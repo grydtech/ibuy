@@ -21,13 +21,13 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.github.randilfernando.msstack</groupId>
+            <groupId>com.github.msstack.msstack</groupId>
             <artifactId>jersey</artifactId>
             <version>${msstack.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.github.randilfernando.msstack</groupId>
+            <groupId>com.github.msstack.msstack</groupId>
             <artifactId>kafka</artifactId>
             <version>${msstack.version}</version>
         </dependency>

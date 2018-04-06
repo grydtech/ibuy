@@ -1,7 +1,9 @@
 package com.grydtech.ibuy.itemservice.requests;
 
 
-public class AddItemRequest implements Request {
+import com.grydtech.msstack.core.Request;
+
+public class AddItemRequest extends Request {
 
     private String itemId;
     private int qty;

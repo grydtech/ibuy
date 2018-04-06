@@ -5,7 +5,6 @@ package com.grydtech.ibuy.itemservice.router;
  */
 import com.grydtech.ibuy.itemservice.handlers.AddItemHandler;
 import com.grydtech.ibuy.itemservice.handlers.GetItemHandler;
-import com.grydtech.ibuy.itemservice.handlers.Handler;
 import com.grydtech.ibuy.itemservice.handlers.NotFoundHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -24,11 +23,12 @@ public class HttpRouterServer {
         // But you can make them classes, and at HttpRouterServerHandler once you
         // get a target class, you can create an instance of it and dispatch the
         // request to the instance etc.
-        Router<Handler> router = new Router<Handler>()
-                .POST("/addItem", new AddItemHandler())
-                .GET("/getItem/:id" , new GetItemHandler())
+        Router<Class> router = new Router<Class>()
+//        Router router = new Router<>()
+                .POST("/addItem", AddItemHandler.class)
+                .GET("/getItem/:id" , GetItemHandler.class)
                 /*.GET("/articles/:id", "Article show page") */
-                .notFound(new NotFoundHandler());
+                .notFound(NotFoundHandler.class);
         System.out.println(router);
 
         NioEventLoopGroup bossGroup   = new NioEventLoopGroup(1);

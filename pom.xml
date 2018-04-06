@@ -16,7 +16,7 @@
     </modules>
 
     <properties>
-        <msstack.version>e91cfd90d2e1b270240e75da0804a0fb573e97ed</msstack.version>
+        <msstack.version>d64f09461100707090dee36b02d4e2516e2d2fec</msstack.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -30,7 +30,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.randilfernando.msstack</groupId>
+            <groupId>com.github.msstack.msstack</groupId>
             <artifactId>core</artifactId>
             <version>${msstack.version}</version>
         </dependency>

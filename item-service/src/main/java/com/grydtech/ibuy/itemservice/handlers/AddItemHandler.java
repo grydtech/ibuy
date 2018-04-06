@@ -2,9 +2,10 @@ package com.grydtech.ibuy.itemservice.handlers;
 
 import com.grydtech.ibuy.itemservice.requests.AddItemRequest;
 import com.grydtech.ibuy.itemservice.responses.GenericResponse;
+import com.grydtech.msstack.core.CommandHandler;
 
 
-public class AddItemHandler implements Handler<AddItemRequest, GenericResponse>{
+public class AddItemHandler implements CommandHandler<AddItemRequest,GenericResponse >{
 
     public AddItemHandler() {
     }
