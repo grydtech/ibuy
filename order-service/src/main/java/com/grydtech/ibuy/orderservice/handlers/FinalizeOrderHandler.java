@@ -1,11 +1,19 @@
 package com.grydtech.ibuy.orderservice.handlers;
 
-import com.grydtech.ibuy.orderservice.requests.AddItemRequest;
+import com.grydtech.ibuy.orderservice.events.OrderFinalizedEvent;
+import com.grydtech.ibuy.orderservice.requests.OrderFinalizeRequest;
 import com.grydtech.ibuy.orderservice.responses.GenericResponse;
+import com.grydtech.msstack.core.CommandHandler;
+import com.grydtech.msstack.core.annotations.Handler;
 
-public class FinalizeOrderHandler {
+import javax.ws.rs.Path;
 
-    public GenericResponse handle(AddItemRequest addItemRequest) {
+@Handler
+@Path("/finalize-order")
+public class FinalizeOrderHandler implements CommandHandler<OrderFinalizeRequest, GenericResponse> {
+
+    public GenericResponse handle(OrderFinalizeRequest orderFinalizeRequest) {
+        new OrderFinalizedEvent(orderFinalizeRequest.getOrderId(), orderFinalizeRequest.getPayment()).emit();
         return new GenericResponse(200, "success");
     }
 

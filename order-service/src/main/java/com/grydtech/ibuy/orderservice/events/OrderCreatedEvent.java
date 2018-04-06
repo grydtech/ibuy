@@ -1,10 +1,9 @@
 package com.grydtech.ibuy.orderservice.events;
 
-import com.grydtech.ibuy.orderservice.common.Event;
-import com.grydtech.ibuy.orderservice.common.Topic;
+import com.grydtech.msstack.core.Event;
 
-@Topic("order-created")
 public class OrderCreatedEvent extends Event {
+    private String orderId;
     private String customerId;
 
     public OrderCreatedEvent(String customerId) {
@@ -13,5 +12,14 @@ public class OrderCreatedEvent extends Event {
 
     public String getCustomerId() {
         return customerId;
+    }
+
+    public OrderCreatedEvent(String orderId, String customerId) {
+        this.orderId = orderId;
+        this.customerId = customerId;
+    }
+
+    public String getOrderId() {
+        return orderId;
     }
 }
