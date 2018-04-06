@@ -6,7 +6,7 @@ import com.grydtech.msstack.microservices.jersey.JerseyApplication;
 
 import javax.ws.rs.ApplicationPath;
 
-@Microservice(port = "4001")
+@Microservice(port = "8081")
 @ApplicationPath("/")
 public class ItemServiceApplication extends JerseyApplication {
 
