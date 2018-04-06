@@ -6,6 +6,9 @@ import com.grydtech.ibuy.itemservice.responses.GenericResponse;
 
 public class AddItemHandler implements Handler<AddItemRequest, GenericResponse>{
 
+    public AddItemHandler() {
+    }
+
     @Override
     public GenericResponse handle(AddItemRequest addItemRequest) {
         return new GenericResponse(200,"ADD item Success");

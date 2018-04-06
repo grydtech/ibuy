@@ -43,6 +43,12 @@
             <artifactId>netty-router</artifactId>
             <version>2.2.0</version>
         </dependency>
+        <!-- jackson data binder -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.2.3</version>
+        </dependency>
 
     </dependencies>
 
