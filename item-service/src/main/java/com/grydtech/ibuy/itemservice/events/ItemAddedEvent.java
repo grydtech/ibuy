@@ -1,9 +1,8 @@
 package com.grydtech.ibuy.itemservice.events;
 
-import com.grydtech.ibuy.itemservice.common.Event;
 import com.grydtech.ibuy.itemservice.entities.ItemEntity;
 
-public class ItemAddedEvent extends Event {
+public class ItemAddedEvent{
     private ItemEntity item;
 
     public ItemAddedEvent(ItemEntity item) {
