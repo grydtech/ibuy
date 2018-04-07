@@ -16,7 +16,7 @@
     </modules>
 
     <properties>
-        <msstack.version>e91cfd90d2e1b270240e75da0804a0fb573e97ed</msstack.version>
+        <msstack.version>63489b76955a4d661ef0a219a5da4a265448e5a0</msstack.version>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

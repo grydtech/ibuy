@@ -1,6 +1,5 @@
 package com.grydtech.ibuy.itemservice.entities;
 
-import com.grydtech.ibuy.itemservice.events.ItemCreatedEvent;
 
 public class ItemEntity {
     private String itemCode;
@@ -27,11 +26,6 @@ public class ItemEntity {
 
     public Double getPrice() {
         return price;
-    }
-
-    public void apply(ItemCreatedEvent itemCreatedEvent) {
-        this.itemCode = itemCreatedEvent.getItemCode();
-        this.name = itemCreatedEvent.getName();
     }
 
 }
