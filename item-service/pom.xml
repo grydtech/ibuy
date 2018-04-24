@@ -6,27 +6,22 @@
 
     <parent>
         <groupId>com.grydtech.ibuy</groupId>
-        <artifactId>ibuy-parent</artifactId>
+        <artifactId>ibuy</artifactId>
         <version>1.0</version>
     </parent>
 
     <artifactId>item-service</artifactId>
     <version>1.0</version>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
         <dependency>
-            <groupId>com.github.randilfernando.msstack</groupId>
+            <groupId>com.grydtech.msstack.microservices</groupId>
             <artifactId>jersey</artifactId>
             <version>${msstack.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>com.github.randilfernando.msstack</groupId>
+            <groupId>com.grydtech.msstack.transport</groupId>
             <artifactId>kafka</artifactId>
             <version>${msstack.version}</version>
         </dependency>
